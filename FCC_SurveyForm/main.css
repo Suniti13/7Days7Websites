@@ -1,0 +1,14 @@
+form {
+    background-color: pink;
+    padding: 15px;
+    margin: auto;
+    width: 70%
+    
+  }
+  input {
+    width:auto;
+    border-radius: 4px;
+  }
+  input[type=text] {
+    padding: 5px 5px;
+  }

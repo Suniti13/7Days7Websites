@@ -33,6 +33,7 @@ nav a {
 
 #navbar img {
     float: left;
+    width: auto;
 }
 
 #navbar nav {
@@ -40,5 +41,24 @@ nav a {
     align-items: flex-end;
     justify-content: flex-end; 
 }
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;;
+    }
+    nav a {
+        padding: 5px;
+    }
+    #navbar {
+        font-size: small;
+
+    }
+    #navbar img {
+        width: 30%;
+    }
+    
+    
+}
+
 
 

@@ -21,6 +21,21 @@ body {
     font-weight: 400;
 }
 
+button {
+    width: 250px;
+    height: 50px;
+    border: 0px;
+    border-radius: 30px;
+    color: hsl(0, 0%, 100%);
+    opacity: 1;
+    transition: 0.3s;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: medium;
+    background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+}
+button:hover {opacity: 0.9}
+
 .f {
     flex: 49.99999%;   
     flex-basis: 50%;
@@ -54,6 +69,7 @@ h4 {
 .intro {
     text-align: center;
     margin: 0;
+    margin-bottom: 100px;
     padding: 0;
     text-align-last: center;
     background-image: url(./images/bg-curvy-desktop.svg);

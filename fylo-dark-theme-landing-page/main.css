@@ -9,6 +9,8 @@
 a {
     text-decoration: none;
     color: white;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
 }
 
 body { 
@@ -34,10 +36,10 @@ button {
     font-size: medium;
     background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
 }
-button:hover {opacity: 0.9}
+button:hover {opacity: 0.9git}
 
 .f {
-    flex: 49.99999%;   
+    flex: 50%;   
     flex-basis: 50%;
     text-align: center;
     
@@ -55,7 +57,13 @@ h1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 60%;
+    font-weight: 700;
+    font-size: 300%;
+}
+
+h2 {
+    font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 250%;
 }
@@ -75,6 +83,7 @@ h4 {
     background-image: url(./images/bg-curvy-desktop.svg);
     background-repeat: no-repeat;
     background-position: bottom;
+    background-size: contain;
 }
 
 .intro p {
@@ -89,8 +98,11 @@ h4 {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    max-width: 100%;
     width: auto;
-    margin-top: 50px;    
+    height: auto;
+    margin-top: 50px;  
+      
 }
 
 .item1 {
@@ -139,6 +151,70 @@ p {
     font-family: "Open Sans", sans-serif;
 }
 
+.Productive {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+#productive-content {
+    margin-left: 20px;
+    margin-right: 70px;
+    padding: 40px;
+}
+#productive-content p {
+    font-size: medium;
+}
+#productive-content a {
+    color: hsl(176, 68%, 64%);
+    text-decoration: underline;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: medium;
+    padding-bottom: 5px;
+}
+
+#productive-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%; 
+    margin: 25px;   
+    padding: 20px;
+}
+
+.productive-item {
+    flex-basis: 50%;    
+    margin: 0px;
+    padding: 0px;
+}
+
+.review {
+    float: left;
+    width: 33.333333333%;
+    padding: 0px 0px;
+}
+
+#reviews {
+    margin: 150px 100px;
+}
+
+#reviews:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.review-card {
+    box-shadow: 0 4px 8px 0 rgba(32, 42, 60, 0.9); 
+    padding: 15px;
+    margin: 20px;
+    background-color: hsl(219, 30%, 18%);
+    border-radius: 5px;
+  }
+
 @media (max-width: 600px) {
     .f {
         flex: 100%;
@@ -147,8 +223,12 @@ p {
         width: 90%;
         font-size: 180%;
     }
+    .intro {
+        background-image: url(./images/bg-curvy-mobile.svg);
+    }
     #intro-img {
-        width: 90%;
+        width: fit-content;
+        height: auto;
         margin-top: 25px;    
     }
     .item1 {

@@ -2,13 +2,42 @@
 a{
     display: block;
     padding: 8px;
-    color: black;
+    color: rgba(0,0,0,.65);
     text-decoration: none;
+    font-size: 14px;
 }
+
+a:hover {
+    text-decoration: underline;
+}
+
+#app {
+    background-image: url(//ssl.gstatic.com/gb/images/i2_2ec824b0.png);
+
+} 
 
 body{
     font-family: 'Open Sans', sans-serif;
     color: #222;
+}
+
+button {
+    width: 130px;
+    height: 35px;
+    margin-top: 33px;
+    margin-left: 20px;
+    padding: 5px;
+    border: white;
+    border-radius: 4px;
+    background-color: #f2f2f2 ;
+    color: rgba(0,0,0,.65);
+    font-size: 90%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+button:hover {
+    border: solid 0.5px rgba(0,0,0,0.2);
+    color: rgba(0,0,0,.9)
 }
 
 footer {
@@ -30,15 +59,19 @@ input  {
     margin-right: auto;
     margin-top: 30px;
     padding-left: 40px;
-    width: 85%;
+    width: 70%;
     height: 45px;
     border: 1px solid rgba(0,0,0, 0.15);
     border-radius: 25px;   
     background-image: url(./search.png), url(./microphone.png);
     background-size: 2.8%;
     background-repeat: no-repeat;
-    background-position: 15px 15px, 540px;
-    
+    background-position: 15px 15px, 440px;   
+}
+
+input:hover {
+    box-shadow: 0.5px 0.5px 5px 1px rgba(0,0,0,0.2);
+    border: 1px solid rgba(0,0,0, 0.09);
 }
 
 ul {
@@ -67,8 +100,29 @@ li {
     text-align: center;
 }
 
-.right {
-    -ms-flex-align: end;
+nav a {
+    margin-top: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: black;
+}
+
+#right {
+
+    float: right;
+}
+
+#signInButton {
+    margin-top: 8px;
+    margin-right: 20px;
+    width: 70px;
+    height: 30px;
+    border-radius: 2px;
+    background-image: linear-gradient(#4387fd, #4683ea);
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: small;
 }
 
   

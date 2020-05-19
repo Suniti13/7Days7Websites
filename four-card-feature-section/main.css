@@ -15,40 +15,63 @@
 
 #blueCard {
     border-top-color: var(--Blue);
+    transform: translateY(50%);
 }
 
 body {
     font-size: 15px;
+    background-color: var(--VeryLightGray);
 }
 
 #boldSpan {
     font-weight: 600;
 }
 
+#Cards {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    justify-content: center;
+    margin-top: 50px;
+}
+
 .card {
     border: none;
     border-top-style:solid;
-    border-top-width: 5px;
+    border-top-width: 4px;
     border-radius: 9px;
-    box-shadow: 0px 5px 30px 6px rgba(84, 158, 242, 0.3);
-    width: 25%;
+    box-shadow: 0px 5px 8px 3px rgba(0,0,0, 0.1);
+    max-width: 280px;
     height: auto;
-    padding: 25px;
+    padding: 30px;
     padding-top: 5px;
     overflow: auto;
+    margin: 15px;
 }
+
+
 
 .card img {
     float: right;
 }
 
+.card p {
+    text-align: left;
+    margin: 15px 10px 30px ;
+    font-size: 13px;
+}
+
 #cyanCard {
     border-top-color: var(--Cyan);
+    transform: translateY(50%);
 }
 
 .heading {
     color: var(--VeryDarkBlue);
-    font-size: xx-large;
+}
+
+h1{
+    font-size: 240%;
 }
 
 h2 {
@@ -58,7 +81,7 @@ h2 {
 #intro {
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
+    max-width: 500px;
     text-align: center;
 }
 
@@ -81,4 +104,13 @@ p span {
 
 #thinSpan {
     font-weight: 200;
+}
+
+@media (max-width:770px) {
+    #cyanCard {
+        transform: translateY(0%);
+    }
+    #blueCard {
+        transform: translateY(0%);
+    }
 }

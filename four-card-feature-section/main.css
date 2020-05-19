@@ -7,11 +7,78 @@
     --VeryDarkBlue: hsl(234, 12%, 34%);
     --GrayishBlue: hsl(229, 6%, 66%);
     --VeryLightGray: hsl(0, 0%, 98%);
+    font-family: "Poppins", sans-serif;
 }
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
+#blueCard {
+    border-top-color: var(--Blue);
+}
+
 body {
-    font-size: 15pxz;
+    font-size: 15px;
+}
+
+#boldSpan {
+    font-weight: 600;
+}
+
+.card {
+    border: none;
+    border-top-style:solid;
+    border-top-width: 5px;
+    border-radius: 9px;
+    box-shadow: 0px 5px 30px 6px rgba(84, 158, 242, 0.3);
+    width: 25%;
+    height: auto;
+    padding: 25px;
+    padding-top: 5px;
+    overflow: auto;
+}
+
+.card img {
+    float: right;
+}
+
+#cyanCard {
+    border-top-color: var(--Cyan);
+}
+
+.heading {
+    color: var(--VeryDarkBlue);
+    font-size: xx-large;
+}
+
+h2 {
+    color: var(--VeryDarkBlue);
+}
+
+#intro {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    text-align: center;
+}
+
+#orangeCard {
+    border-top-color: var(--Orange);
+}
+
+p {
+    color: var(--GrayishBlue);
+}
+
+p span {
+    display: block;
+    text-align: center;
+}
+
+#redCard {
+    border-top-color: var(--Red);
+}
+
+#thinSpan {
+    font-weight: 200;
 }

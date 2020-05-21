@@ -1,0 +1,42 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --BrightYellow: hsl(71, 73%, 54%);
+    --LightGray: hsl(204, 43%, 93%);
+    --GrayishBlue: hsl(218, 22%, 67%);
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+}
+
+button {
+    background-color: var(--BrightYellow);
+}
+
+h1 {
+    font-weight: 700;
+    color: var(--Cyan);
+}
+
+#guarantee {
+    color: var(--BrightYellow);
+    
+}
+
+#introP {
+    color: var(--GrayishBlue);
+}
+
+#leftDiv {
+    background-color: var(--Cyan);
+    color: var(--LightGray);
+}
+
+#rightDiv {
+    background-color: var(--Cyan);
+    color: var(--LightGray);
+}

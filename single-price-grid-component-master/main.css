@@ -13,8 +13,29 @@ body {
     font-family: 'Karla', sans-serif;
 }
 
+#bottomDiv {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 button {
     background-color: var(--BrightYellow);
+}
+
+#card {
+    border: 1px solid;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    max-width: 650px;
+    padding: auto;
 }
 
 h1 {
@@ -24,6 +45,7 @@ h1 {
 
 #guarantee {
     color: var(--BrightYellow);
+    font-weight: 700;
     
 }
 
@@ -34,9 +56,30 @@ h1 {
 #leftDiv {
     background-color: var(--Cyan);
     color: var(--LightGray);
+    width: 50%;
+    
 }
 
 #rightDiv {
     background-color: var(--Cyan);
     color: var(--LightGray);
+    width: 50%;
+}
+
+#topDiv {
+    padding: 10px 40px 10px 40px;
+}
+
+@media (max-width:600px) {
+    #card {
+        width: 90%;
+    }
+
+    #leftDiv {
+        width: 100%;
+    }
+
+    #rightDiv {
+        width: 100%;
+    }
 }

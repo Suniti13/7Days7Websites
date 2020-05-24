@@ -11,36 +11,68 @@
 body {
     font-size: 16px;
     font-family: 'Karla', sans-serif;
+    background-color: var(--LightGray);
 }
 
 #bottomDiv {
     display: flex;
-    flex-wrap: wrap;
+}
+
+#bottomDiv div {
+    flex: 50%;
 }
 
 button {
     background-color: var(--BrightYellow);
+    color: var(--LightGray);
+    font-weight: 700;
+    font-size: 95%;
+    width: 210px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0.2px 2px 8px 1px rgba(0,0,0, 0.2);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button:hover {
+    opacity: 0.9;
 }
 
 #card {
-    border: 1px solid;
+    box-shadow: 0px 8px 20px 5px rgba(0,0,0, 0.2);
+    border-radius: 8px;
+    background-color: white;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    
+    max-width: 630px;
+    height: auto;
+    padding: auto;
+    overflow: hidden;
     margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
 
-    max-width: 650px;
-    padding: auto;
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
 
 h1 {
     font-weight: 700;
     color: var(--Cyan);
+}
+h3 {
+    font-weight: 700;
+    color: var(--LightGray);
 }
 
 #guarantee {
@@ -56,27 +88,58 @@ h1 {
 #leftDiv {
     background-color: var(--Cyan);
     color: var(--LightGray);
-    width: 50%;
-    
+    padding: 20px 25px 20px 40px;
+}
+
+#perMonth {
+    color: lightblue;
+    margin-top: 0px;
+    font-size: 95%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#price {
+    font-size: xx-large;
+    font-weight: 700;
+    color: var(--LightGray);
 }
 
 #rightDiv {
     background-color: var(--Cyan);
     color: var(--LightGray);
-    width: 50%;
+    opacity: 0.85;
+    padding: 20px 30px 30px 40px;
+}
+
+#rightDiv p {
+    margin: 5px;
+    margin-left: 0px;
+    font-size: 85%;
+    font-weight: 400;
 }
 
 #topDiv {
-    padding: 10px 40px 10px 40px;
+    padding: 15px 40px 25px 40px;
 }
 
 @media (max-width:600px) {
+    #bottomDiv {
+        flex-wrap: wrap;
+    }
+
     #card {
         width: 90%;
+        margin: auto;
+        position: unset;
+        top: auto;
+        left: auto;
+        transform: translate(0%, 0%);
     }
 
     #leftDiv {
         width: 100%;
+        padding-bottom: 25px;
     }
 
     #rightDiv {

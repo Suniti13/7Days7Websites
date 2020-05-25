@@ -1,8 +1,16 @@
+body {
+  background-image: url(./got.png) ;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 form {
     background-color: pink;
     padding: 15px;
     margin: auto;
-    width: 70%
+    width: 70%;
+    background-image: url(./got.jpeg);
     
   }
   input {

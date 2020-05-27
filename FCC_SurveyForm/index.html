@@ -31,6 +31,7 @@
       <label for="dropdown" id="dropdown-label">Which is your favourite character?</label>
       <br>
       <select id="dropdown">
+        <option value="" disabled selected hidden>Select</option>
         <option value="Arya">Arya</option>
         <option value="Sansa">Sansa</option>
         <option value="Robb">Robb</option>
@@ -44,7 +45,7 @@
       <input type="radio" id="Yes" name="radio" value="Yes">
       <label for="Yes">Yes</label><br>
       <input type="radio" id="No" name="radio" value="No">
-      <label for="No">No</label><br>
+      <label for="No">No</label><br><br>
       <!-- Checkbox -->
       <p>Which ones are your favourite episodes?</p>
       <input type="checkbox" id="1" name="radio" value="">
@@ -65,7 +66,7 @@
       <label for="comments" id="comments-label">Any comments or suggestions?</label>
       <input type="textarea" id="comments" name="comments" placeholder="Give Comments"><br><br>
       <!-- Submit Button -->
-      <input type="submit" value="Submit">
+      <input id="submit" type="submit" value="Submit">
       
         
       

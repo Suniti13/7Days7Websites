@@ -1,4 +1,18 @@
+@font-face {
+  /*Downloaded from 
+  https://www.fonts4free.net/game-of-thrones-font.html*/
+  
+  font-family: 'Game of Thrones';
+  src: url('Game\ of\ Thrones.eot'); /* IE9 Compat Modes */
+  src: url('Game\ of\ Thrones.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Game\ of\ Thrones.woff') format('woff'), /* Modern Browsers */
+       url('Game\ of\ Thrones.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Game\ of\ Thrones.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
 body {
+  font-family: 'Muli';
+  font-size: larger;
   background-image: url(./win-or-die.jpeg) ;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -9,6 +23,9 @@ body {
 #description {
   margin-bottom: 40px ;
   margin-left: 70px;
+  
+  font-size: x-large;
+  font-style: italic;
 }
 
 form {
@@ -56,6 +73,7 @@ input[type='number'] {
   border-radius: 4px;
   background-color: rgba(255,255,255,1);
   opacity: 1;
+  font-size: 15px;
   }
 
 
@@ -63,6 +81,7 @@ input[type='number'] {
 #title {
   margin-top: 60px;
   margin-left: 70px;  
+  font-family: 'Game of Thrones';
 }
 
 @media (max-width: 800px) {

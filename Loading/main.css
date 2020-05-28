@@ -1,19 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 
+/* First Slide Animation*/
+@keyframes expand {
+    from {width: 70%; height: 50%;}
+    to {width: 100%; height: 100%;}
+}
 
+@keyframes loading {
+    from {width: 0; }
+    to {width: 150px;}
+}
 
+@keyframes load-out {
+    from {width: 0; color: rgba(218, 202, 164, .1); }
+    to {width: 150px; color: rgba(218, 202, 164, .1);}
+}
+
+@keyframes slide-up {
+    from {height: 100%;}
+    to {height: 0;}
+}
+
+/* First Slide Other Styles*/
 #first {
     background-color: white;
 }
 
-#loading-bar {
+#bg1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #B4997A;
+    background-color: #DACAA4;
+    animation: slide-up 0.8s cubic-bezier(0.7, 0, 0.84, 0) 4s forwards;
+}
+
+#box1 {
     position: absolute;
     margin: 0;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100px;
-    height: 40px;
-    
-
-    background-color: black;
+    width: 70%;
+    height: 50%;
+    background-color: #291412;
+    animation: expand 0.9s cubic-bezier(0.7, 0, 0.84, 0) 3s forwards;
 }
+
+#loading-bar {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(218, 202, 164, .1);
+}
+
+#load {
+    position: absolute;
+    width: 0;
+    height: 41px;
+    border: none;
+    background: #DACAA4;    
+    
+    animation: loading 1.5s cubic-bezier(0.5, 0, 0.75, 0) 1s forwards;
+               
+    
+     
+}
+
+
+
+

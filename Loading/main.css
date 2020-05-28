@@ -1,0 +1,20 @@
+
+
+
+#first {
+    background-color: white;
+
+}
+
+#loading-bar {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 40px;
+    
+
+    background-color: black;
+}

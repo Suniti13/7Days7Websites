@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .divv {
+            position: relative;
+            overflow: hidden;
+            border-radius: 5px;
+            margin: 50px;
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+        }
+
+        .divv::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 5px;
+            top:0;
+            left: 0;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="divv"></div>
+</body>
+</html>

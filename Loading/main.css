@@ -26,6 +26,11 @@
     to {height: 0;}
 }
 
+@keyframes disappear {
+    from { background-color: initial;}
+    to {background-color: #64434C;}
+}
+
 /* First Slide Other Styles*/
 #final {
     width: 100%;
@@ -68,6 +73,7 @@
     border: none;
     border-radius: 8px;
     background-color: rgba(218, 202, 164, .1);
+    animation: disappear 0.1s linear 6.5s forwards;
 }
 
 #load {
@@ -82,5 +88,7 @@
 }
 
 /* Final Slide */
-
+p {
+    display: none;   
+}
 

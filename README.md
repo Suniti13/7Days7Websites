@@ -10,3 +10,5 @@ Challenge starting from 12/05/2020
 ### Website 4: Four Card Feature Section
 
 ### Website 5: Single Price Grid Component 
+
+### Website 6: Loading

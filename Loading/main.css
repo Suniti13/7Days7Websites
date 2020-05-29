@@ -1,4 +1,8 @@
 /* Fonts */
+@font-face {
+    font-family: 'SfDistantGalaxyAltoutline';
+    src: url("./SfDistantGalaxyAltoutline-e2Bp.ttf") format("opentype");
+}
 
 * {
     margin: 0;
@@ -32,13 +36,6 @@
 }
 
 /* First Slide Other Styles*/
-#final {
-    width: 100%;
-    height: 100%;
-    background-image: url(./obi_wan_kenobi_by_reverendtundra_d9wf6sc.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
 
 #bg1 {
     position: absolute;
@@ -73,7 +70,7 @@
     border: none;
     border-radius: 8px;
     background-color: rgba(218, 202, 164, .1);
-    animation: disappear 0.1s linear 6.5s forwards;
+    animation: disappear 0.1s ease-out 6.5s forwards;
 }
 
 #load {
@@ -81,14 +78,29 @@
     width: 0;
     height: 41px;
     border: none;   
-    background: #64434C;
     background: #DACAA4; 
     animation: loading 1s cubic-bezier(0.5, 0, 0.75, 0) 1s forwards,
                load-out 1.6s ease-in 4s forwards ;    
 }
 
 /* Final Slide */
-p {
-    display: none;   
+h1 {
+    position: relative;
+    float: right;
+    top: 30%;
+    transform: translateY(-50%);
+    margin-right: 3vw;  
+    font-family: 'SfDistantGalaxyAltoutline';
+    font-size: 15.5vw;
+    color: #291412 ;
+    white-space: pre-line;
+}
+
+#final {
+    width: 100%;
+    height: 100%;
+    background-image: url(./obi_wan_kenobi_by_reverendtundra_d9wf6sc.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 

@@ -1,0 +1,17 @@
+body {
+    height: 100%;
+    margin: 0;
+    background: black;
+    color: white;
+}
+
+.boxes {
+    background-color: tomato;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: auto;
+    height: 42vh;
+    float: left;
+    width: 31.5%;
+}
+

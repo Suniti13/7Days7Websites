@@ -5,22 +5,21 @@ body {
 }
 
 .boxes {
-
-    margin: 2px; 
-    height: 15rem;
+    margin: 10px;
+    height: 25rem;
     
-    background-color: tomato;
 }
+
 
 #container {
     display: grid;
     margin: 10px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1100px) {
     .boxes {
-        height: 13rem;
+        height: 20rem;
     }
 
     #container {
@@ -30,7 +29,7 @@ body {
 
 @media (max-width: 750px) {
     .boxes {
-        height: 11rem;
+        height: 23rem;
     }
 
     #container {
@@ -38,7 +37,9 @@ body {
     }
 }
 
+
+
 img {
-    
-    object-fit: cover;
+   width: 100%;
+   height: 100%;
 }

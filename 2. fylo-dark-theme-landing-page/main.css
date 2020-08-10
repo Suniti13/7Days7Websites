@@ -13,6 +13,10 @@ a {
     font-weight: 400;
 }
 
+a:hover {
+    color: hsl(176, 68%, 64%);
+}
+
 body { 
     background-color: hsl(218, 28%, 13%);
     color: hsl(0, 0%, 100%);
@@ -36,7 +40,9 @@ button {
     font-size: medium;
     background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
 }
-button:hover {opacity: 0.9git}
+button:hover {
+    background-image: linear-gradient(to right, hsl(198, 60%, 50%), hsl(176, 68%, 64%));
+}
 
 #early-access-card {
     width: 65%;
@@ -45,7 +51,8 @@ button:hover {opacity: 0.9git}
     margin-left: auto;
     margin-right: auto;
     background-color: hsl(217, 28%, 15%);
-    box-shadow: 1px 1px 3px hsl(219, 30%, 18%) ;
+    border-radius: 8px;
+    box-shadow: 1px 1px 20px hsl(216, 53%, 9%) ;
 }
 
 #early-access-card h3{

@@ -14,6 +14,7 @@ a {
 }
 
 a:hover {
+    cursor: pointer;
     color: hsl(176, 68%, 64%);
 }
 
@@ -53,11 +54,25 @@ button:hover {
     background-color: hsl(217, 28%, 15%);
     border-radius: 8px;
     box-shadow: 1px 1px 20px hsl(216, 53%, 9%) ;
+    transform: translateY(50%);
 }
 
 #early-access-card h3{
     font-size: xx-large;
 }
+
+#early-access-card input {
+    width: 50%;
+    min-width: 250px;
+    height: 50px;
+    margin: 10px;
+    border: 0px;
+    border-radius: 30px;
+    text-align: center;
+    color: grey;
+    font-size: small;
+}
+
 .f {
     flex: 50%;   
     flex-basis: 50%;
@@ -73,6 +88,8 @@ button:hover {
 }
 
 #footer-div {
+    padding: 100px;
+    padding-top: 200px;
     background-color: hsl(216, 53%, 9%);
 }
 

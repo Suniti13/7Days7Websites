@@ -77,6 +77,12 @@ h1 u {
     }
 }
 
+@media (max-width: 900px) {
+    .boxes {
+        height: 17rem;
+    }
+}
+
 @media (max-width: 750px) {
     .boxes {
         height: 23rem;
@@ -84,6 +90,12 @@ h1 u {
 
     #container {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 550px) {
+    .boxes {
+        height: 15rem;
     }
 }
 

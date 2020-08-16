@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .attribution { 
     font-size: 11px; 
     text-align: center; 
@@ -31,6 +35,7 @@ body {
 button {
     width: 250px;
     height: 50px;
+    margin-bottom: 30px;
     border: 0px;
     border-radius: 30px;
     color: hsl(0, 0%, 100%);
@@ -245,6 +250,7 @@ p {
 
 #reviews {
     margin: 150px 100px;
+    margin-bottom: 0;
 }
 
 #reviews:after {
@@ -290,12 +296,19 @@ p {
 }
 
 @media (max-width: 750px) {
+    
+    button {
+        width: 200px;
+    }
     .f {
         flex: 100%;
     }
     h1 {
         width: 90%;
         font-size: 180%;
+    }
+    #early-access-card input {
+        min-width: 200px;
     }
     .intro {
         background-image: url(./images/bg-curvy-mobile.svg);
@@ -322,6 +335,10 @@ p {
     }
     #navbar img {
         width: 30%;
+    }
+    #footer-div {
+        padding: 70px;
+        padding-top: 300px;
     }
     .productive-item {
         flex-basis: 90%;
